@@ -3,6 +3,11 @@ gulp-typetalk
 
 Gulp plugin to send notifications to Typetalk
 
+[![Build Status](https://img.shields.io/travis/is2ei/gulp-typetalk/master.svg?style=flat-square)][travis]
+
+[travis]: https://travis-ci.com/is2ei/gulp-typetalk
+
+
 ## Install
 
 ```
