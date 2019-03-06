@@ -1,6 +1,12 @@
 gulp-typetalk
 ===
 
+## Install
+
+```
+$ npm i --save-dev gulp-typetalk
+```
+
 ## Usage
 
 ```javascript
