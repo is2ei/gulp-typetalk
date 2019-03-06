@@ -1,6 +1,6 @@
 {
     "name": "gulp-typetalk",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Gulp plugin to send notifications to Typetalk",
     "license": "MIT",
     "repository": {
