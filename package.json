@@ -8,8 +8,10 @@
         "url": "https://github.com/is2ei/gulp-typetalk"
     },
     "scripts": {
-        "lint": "eslint ./index.js",
-        "test": "echo hello"
+        "lint": "eslint ./index.js ./index.test.js",
+        "test": "mocha ./index.test.js",
+        "coverage": "nyc mocha ./index.test.js",
+        "report-coverage": "nyc mocha ./index.test.js && nyc report --reporter=text-lcov | coveralls"
     },
     "files": [
         "index.js"
@@ -19,8 +21,11 @@
         "typetalk"
     ],
     "devDependencies": {
+        "chai": "^4.2.0",
         "eslint": "^5.15.1",
-        "eslint-config-is2ei": "^0.1.2"
+        "eslint-config-is2ei": "^0.1.2",
+        "mocha": "^6.0.2",
+        "nyc": "^13.3.0"
     },
     "dependencies": {
         "gulp-util": "^3.0.8"
