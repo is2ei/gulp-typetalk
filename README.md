@@ -4,7 +4,7 @@ gulp-typetalk
 Gulp plugin to send notifications to Typetalk
 
 [![Build Status](https://img.shields.io/travis/com/is2ei/gulp-typetalk/master.svg?style=flat-square)][travis]
-[![Coverage Status](https://img.shields.io/coveralls/github/is2ei/gulp-typetalk.svg?style=flat-square)][coveralls]
+[![Coverage Status](https://img.shields.io/coveralls/github/is2ei/gulp-typetalk/master.svg?style=flat-square)][coveralls]
 [![npm version](https://img.shields.io/npm/v/gulp-typetalk.svg?style=flat-square)][npm]
 
 [travis]: https://travis-ci.com/is2ei/gulp-typetalk
