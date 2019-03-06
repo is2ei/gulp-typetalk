@@ -1,9 +1,13 @@
 {
     "env": {
-        "node": true
+        "node": true,
+        "mocha": true
     },
     "parserOptions": {
         "sourceType": "module"
     },
+    "plugins": [
+        "mocha"
+    ],
     "extends": "is2ei"
 }
