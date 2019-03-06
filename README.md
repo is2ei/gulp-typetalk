@@ -1,6 +1,8 @@
 gulp-typetalk
 ===
 
+Gulp plugin to send notifications to Typetalk
+
 ## Install
 
 ```
