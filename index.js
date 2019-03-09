@@ -1,7 +1,7 @@
 const gutil = require("gulp-util"),
     https = require("https");
 
-module.exports = function typetalk (opts) {
+module.exports = (opts) => {
     if (!opts.token) {
         throw new gutil.PluginError("gulp-typetalk", "token is missing!");
     }

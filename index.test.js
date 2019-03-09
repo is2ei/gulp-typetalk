@@ -1,13 +1,13 @@
-/* eslint-disable func-names, max-lines-per-function */
+/* eslint-disable max-lines-per-function */
 
 const nock = require("nock"),
     typetalk = require("./index.js"),
     {expect} = require("chai");
 
-describe("gulp-typetalk", function () {
-    describe("without token", function () {
-        it("should throw error", function () {
-            expect(function () {
+describe("gulp-typetalk", () => {
+    describe("without token", () => {
+        it("should throw error", () => {
+            expect(() => {
                 typetalk({
                     "message": "Hello, World!",
                     "token": "",
@@ -19,9 +19,9 @@ describe("gulp-typetalk", function () {
         });
     });
 
-    describe("without topic id", function () {
-        it("should throw error", function () {
-            expect(function () {
+    describe("without topic id", () => {
+        it("should throw error", () => {
+            expect(() => {
                 typetalk({
                     "message": "Hello, World!",
                     "token": "qweasdzxc",
@@ -33,9 +33,9 @@ describe("gulp-typetalk", function () {
         });
     });
 
-    describe("without message", function () {
-        it("should throw error", function () {
-            expect(function () {
+    describe("without message", () => {
+        it("should throw error", () => {
+            expect(() => {
                 typetalk({
                     "message": "",
                     "token": "qweasdzxc",
@@ -47,17 +47,17 @@ describe("gulp-typetalk", function () {
         });
     });
 
-    describe("with enough options", function () {
+    describe("with enough options", () => {
 
-        before(function () {
+        before(() => {
             const OK = 200;
             nock("https://typetalk.com")
                 .post("/api/v1/topics/12345")
                 .reply(OK, {});
         });
 
-        it("should post message", function () {
-            expect(function () {
+        it("should post message", () => {
+            expect(() => {
                 typetalk({
                     "message": "Hello, World!",
                     "token": "qweasdzxc",
