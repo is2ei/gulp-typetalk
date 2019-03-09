@@ -1,8 +1,8 @@
 /* eslint-disable func-names, max-lines-per-function */
 
-const typetalk = require("./index.js");
-const {expect} = require("chai");
-const nock = require("nock");
+const nock = require("nock"),
+    typetalk = require("./index.js"),
+    {expect} = require("chai");
 
 describe("gulp-typetalk", function () {
     describe("without token", function () {

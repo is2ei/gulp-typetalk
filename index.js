@@ -1,5 +1,5 @@
-const gutil = require("gulp-util");
-const https = require("https");
+const gutil = require("gulp-util"),
+    https = require("https");
 
 module.exports = function typetalk (opts) {
     if (!opts.token) {
